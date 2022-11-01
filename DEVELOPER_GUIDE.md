@@ -13,7 +13,7 @@ npm link
 
 Now you should include your local package to your test project.
 ```
-npm link @creamie/core
+npm link array-observer
 ```
 
 So your setup is complete. While you are doing any changes in you local package will automatically sync to your `node_modules`.
