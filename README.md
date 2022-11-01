@@ -1,5 +1,7 @@
 # Array Observer
 
+[![Build Status](https://api.travis-ci.com/Haribalajiravi/array-observer.svg?branch=main)](https://travis-ci.org/Haribalajiravi/array-observer) [![GitHub issues](https://img.shields.io/github/issues/Haribalajiravi/array-observer)](https://github.com/Haribalajiravi/array-observer/issues) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/npm/dt/array-observer.svg)](https://npmcharts.com/compare/array-observer?minimal=true) [![version](https://img.shields.io/npm/v/array-observer.svg)](https://www.npmjs.com/package/array-observer)
+
 Example:
 
 ```javascript
