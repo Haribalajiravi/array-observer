@@ -10,7 +10,7 @@ export const ActionType = {
 /**
  * Observe's array to capture element addition, removal and modification.
  */
-export function ArrayObserver(array, callback) {
+export function ArrayObserver(array, callback) { 
   // function callback is mandatory
   if (callback && typeof callback == 'function') {
     const proxyArray = new Proxy(array, {
