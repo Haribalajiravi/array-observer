@@ -27,6 +27,12 @@ const proxyTasks = ArrayObserver(tasks, (metadata) => {
     metadata.value
   );
 });
+
+proxyTasks.push({
+    name: 'UI: create a polyfill for map'
+});
+
+proxyTasks.pop();
 ```
 
 Support through below platforms:
