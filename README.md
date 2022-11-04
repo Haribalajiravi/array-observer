@@ -2,6 +2,18 @@
 
 [![Build Status](https://api.travis-ci.com/Haribalajiravi/array-observer.svg?branch=main)](https://travis-ci.org/Haribalajiravi/array-observer) [![GitHub issues](https://img.shields.io/github/issues/Haribalajiravi/array-observer)](https://github.com/Haribalajiravi/array-observer/issues) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/npm/dt/array-observer.svg)](https://npmcharts.com/compare/array-observer?minimal=true) [![version](https://img.shields.io/npm/v/array-observer.svg)](https://www.npmjs.com/package/array-observer)
 
+Hello Folks! 😎🎶
+
+This is just a simple array observer, which listen to array's addition, modification and removal of each element and triggers the provided callback with respective metadata. We can use any of the array modification methods on proxyArray instance. 
+
+### How it works under the hood?
+  [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) plays important role where it helps to get the hook of array modification overall and then we have a piece of logic where it detect what kind of operation user performed.
+
+### Why do we need to use this package?
+  Proxy won't provide information about what kind of operation user has been made on the array. So, I wrote a simple logic to fulfill this usecase.
+
+### 🔥I also added types🔥. Typescript lovers smash the star ⭐️ 
+
 Example:
 
 ```javascript
@@ -42,11 +54,3 @@ Support through below platforms:
 [![patreon](https://img.shields.io/badge/%20-Become%20a%20patreon%3F-%23555555?logo=patreon&style=for-the-badge)](https://www.patreon.com/haribalajiravi)
 
 [![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://www.buymeacoffee.com/7xcFqmn)
-
-## Contributor
-
-- [HBR](https://twitter.com/haribalaji_o_0) (Developer)
-
-## Copyrights
-
-(c) 2022, [Haribalaji Raviprakash](https://twitter.com/haribalajiravi1)
