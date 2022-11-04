@@ -1,7 +1,9 @@
-os: osx
+dist: trusty
+os: linux
 language: node_js
 node_js:
-  - 18
+- node
+- 17
 script:
-  - "npm run lint"
-  - "npm test"
+- "npm run lint"
+- "npm test"
