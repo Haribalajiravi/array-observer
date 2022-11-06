@@ -1,6 +1,6 @@
 # Array Observer
 
-[![Travis-ci](https://app.travis-ci.com/Haribalajiravi/array-observer.svg?branch=main)](https://app.travis-ci.com/Haribalajiravi/array-observer) [![CircleCI](https://circleci.com/gh/Haribalajiravi/array-observer.svg?style=svg)](https://circleci.com/gh/Haribalajiravi/array-observer) [![GitHub issues](https://img.shields.io/github/issues/Haribalajiravi/array-observer)](https://github.com/Haribalajiravi/array-observer/issues) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/npm/dt/array-observer.svg)](https://npmcharts.com/compare/array-observer?minimal=true) [![version](https://img.shields.io/npm/v/array-observer.svg)](https://www.npmjs.com/package/array-observer)
+[![Travis-ci](https://app.travis-ci.com/Haribalajiravi/array-observer.svg?branch=main)](https://app.travis-ci.com/Haribalajiravi/array-observer) [![CircleCI](https://circleci.com/gh/Haribalajiravi/array-observer.svg?style=svg)](https://circleci.com/gh/Haribalajiravi/array-observer) [![GitHub issues](https://img.shields.io/github/issues/Haribalajiravi/array-observer)](https://github.com/Haribalajiravi/array-observer/issues) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Download](https://img.shields.io/github/downloads/haribalajiravi/array-observer/total.svg)](https://www.npmjs.com/package/array-observer) [![version](https://img.shields.io/npm/v/array-observer.svg)](https://www.npmjs.com/package/array-observer)
 
 Hello Folks! 😎🎶
 
@@ -62,7 +62,7 @@ proxyTasks.pop();
 ### CDN usage ([UMD](https://datacadamia.com/web/javascript/module/umd))
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/array-observer@latest/array-observer.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/array-observer@latest/dist/array-observer.umd.js"></script>
 <script>
   const tasks = [
     {
