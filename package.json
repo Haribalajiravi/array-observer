@@ -1,6 +1,6 @@
 {
   "name": "array-observer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic array observer which listen's for array item changes",
   "main": "dist/array-observer.cjs.js",
   "module": "dist/array-observer.esm.js",
