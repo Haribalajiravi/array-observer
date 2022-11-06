@@ -10,12 +10,12 @@ export const ActionType = {
 /**
  * Observe's array to capture element addition, removal and modification.
  */
-export function ArrayObserver(array, callback) { 
+export function observer(array, callback) { 
   // function callback is mandatory
   if (callback && typeof callback == 'function') {
     const proxyArray = new Proxy(array, {
       getPrototypeOf() {
-        return ArrayObserver.prototype;
+        return observer.prototype;
       },
 
       // for existing element removal
@@ -75,6 +75,6 @@ export function ArrayObserver(array, callback) {
 
     return proxyArray;
   } else {
-    console.error('ArrayObserver: callback is missing.');
+    console.error('observer: callback is missing.');
   }
 }

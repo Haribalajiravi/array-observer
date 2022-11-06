@@ -14,9 +14,15 @@ This is just a simple array observer, which listen to array's addition, modifica
 
 ### 🔥I also added types🔥. Typescript lovers smash the star ⭐️ 
 
-Example:
+### Installation
+```
+npm i array-observer
+```
 
+### Usage
 ```javascript
+import { observer, ActionType } from 'array-observer';
+
 const tasks = [
   {
     name: 'task1: learn JS',
@@ -26,13 +32,13 @@ const tasks = [
   },
 ];
 
-const proxyTasks = ArrayObserver(tasks, (metadata) => {
+const proxyTasks = observer(tasks, (metadata) => {
   console.log(
     // Index of which addition, modfication or removal has been done
     metadata.index,
 
     // Type of action added, modified or removed
-    metadata.type,
+    metadata.type === ActionType.Added,
 
     // Actual array
     metadata.target,
@@ -47,6 +53,11 @@ proxyTasks.push({
 });
 
 proxyTasks.pop();
+```
+
+### CDN usage
+```
+<script src="https://cdn.jsdelivr.net/npm/array-observer@latest/array-observer.umd.js"></script>
 ```
 
 Support through below platforms:

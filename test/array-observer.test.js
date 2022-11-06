@@ -1,9 +1,9 @@
-import { ActionType, ArrayObserver } from '../src/array-observer';
+import { ActionType, observer } from '../src/array-observer';
 import { expect, test } from '@jest/globals';
 
 test('Initializing successfully', () => {
   const oddNumbers = [1, 3, 5, 7, 9];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, () => {});
+  const proxyOddNumbers = observer(oddNumbers, () => {});
   expect(proxyOddNumbers).toEqual(oddNumbers);
 });
 
@@ -15,7 +15,7 @@ test('Initializing successfully', () => {
 test('sort()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.sort((a, b) => b - a);
@@ -41,7 +41,7 @@ test('sort()', () => {
 test('unshift()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.unshift(23);
@@ -58,7 +58,7 @@ test('unshift()', () => {
 test('shift()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.shift();
@@ -74,7 +74,7 @@ test('shift()', () => {
 test('splice()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.splice(0, 2, 8, 9, 10);
@@ -91,7 +91,7 @@ test('splice()', () => {
 test('push()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.push(5, 7);
@@ -107,7 +107,7 @@ test('push()', () => {
 test('pop()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.pop();
@@ -120,7 +120,7 @@ test('pop()', () => {
 test('fill()', () => {
   const oddNumbers = [1, 3];
   const results = [];
-  const proxyOddNumbers = ArrayObserver(oddNumbers, (data) => {
+  const proxyOddNumbers = observer(oddNumbers, (data) => {
     results.push(data);
   });
   proxyOddNumbers.fill(0, 1);
