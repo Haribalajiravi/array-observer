@@ -8,7 +8,7 @@ export const ActionType = {
 };
 
 /**
- * Observe's array to capture element addition, removal and modification.
+ * Observe array to capture element addition, removal and modification.
  */
 export function observer(array, callback) { 
   // function callback is mandatory
