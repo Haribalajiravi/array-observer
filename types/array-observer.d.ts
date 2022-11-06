@@ -15,7 +15,7 @@ export type ArrayObserverCallback = <T>(
   params: ArrayObserverCallbackParams<T>
 ) => void;
 
-export type ArrayObserver = <T>(
+export type observer = <T>(
   array: T[],
   callback: ArrayObserverCallback
 ) => Proxy;
