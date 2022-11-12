@@ -1,7 +1,7 @@
 export enum ActionType {
   Added = 'added',
   Modified = 'modified',
-  Removed = 'removed',
+  Removed = 'removed'
 }
 
 export interface ArrayObserverCallbackParams<T> {
@@ -11,11 +11,6 @@ export interface ArrayObserverCallbackParams<T> {
   value: T;
 }
 
-export type ArrayObserverCallback = <T>(
-  params: ArrayObserverCallbackParams<T>
-) => void;
+export type ArrayObserverCallback = <T>(params: ArrayObserverCallbackParams<T>) => void;
 
-export type observer = <T>(
-  array: T[],
-  callback: ArrayObserverCallback
-) => Proxy;
+export declare function observer<T>(array: T[], callback: ArrayObserverCallback): Proxy;
