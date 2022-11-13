@@ -1,6 +1,6 @@
 {
   "name": "array-observer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A basic array observer which listen's for array item changes",
   "main": "dist/array-observer.cjs.js",
   "module": "dist/array-observer.esm.js",
@@ -11,7 +11,6 @@
     "prepare": "husky install",
     "start": "http-server"
   },
-  "type": "module",
   "types": "types/index.d.ts",
   "keywords": [
     "array",
